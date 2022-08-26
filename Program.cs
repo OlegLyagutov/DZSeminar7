@@ -79,9 +79,13 @@ for (int i = 0; i < rows; i++)
     {
         array[i, j] = new Random().Next(10);
         Console.Write(array[i,j] + "\t");
-        
+        if (j < ) meanArithmetic += array[i,j] / i;
     }
-Console.WriteLine();   
+Console.WriteLine(); 
 
-    
+ 
+
+Console.WriteLine($"Среднее арифметическое каждого столбца: {meanArithmetic}");
 }
+
+
