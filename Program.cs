@@ -67,25 +67,37 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-Console.Write("Введите количество строк: ");
-int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите количество столбцов: ");
-int columns = Convert.ToInt32(Console.ReadLine());
-int[,] array = new int[rows, columns];
-int meanArithmetic = 0;
-for (int i = 0; i < rows; i++)
-{
-    for (int j = 0; j < columns; j++)
-    {
-        array[i, j] = new Random().Next(10);
-        Console.Write(array[i,j] + "\t");
-        if (j < ) meanArithmetic += array[i,j] / i;
-    }
-Console.WriteLine(); 
+// Console.Write("Введите количество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите количество столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// int[,] array = new int[rows, columns];
+// double meanArithmetic = 0;
+// double[] sum = new double[columns];
+// for (int i = 0; i < rows; i++)
+// {
+//     for (int j = 0; j < columns; j++)
+//     {
+//         array[i, j] = new Random().Next(10);
+        
+//         Console.Write(array[i,j] + "\t");
+                
+//     }
+
+// Console.WriteLine(); 
+
+// }
+// for (int j = 0; j <= rows; j++)
+// {
+//     for (int i = 0; i < rows; i++)
+//     {
+//         sum[j] +=array[i,j];
+//         meanArithmetic = sum[j] / rows;     
+    
+//     }    
+
+// Console.WriteLine($"Среднее арифметическое {j+1} столбца матрицы: {meanArithmetic}");
+// }
 
  
-
-Console.WriteLine($"Среднее арифметическое каждого столбца: {meanArithmetic}");
-}
-
 
